@@ -28,7 +28,7 @@ body{
 }
 
 .inputs input[type="text"]{
-    height: 4rem;
+    height: 4rem ;
     width: 20rem;
     background: #212121;
     font-weight: bold;
@@ -36,7 +36,7 @@ body{
     padding: 10px;
     border: none;
     background-color: transparent;
-    border: 2px solid #473939;
+    border: 2px solid black;
     border-radius: 3px;
     margin-right: 4px;
 
