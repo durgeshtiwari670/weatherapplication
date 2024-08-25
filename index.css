@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(weather.jpeg);
+    background-size: cover; /* Cover the whole screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+}
