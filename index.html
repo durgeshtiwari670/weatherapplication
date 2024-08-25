@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-       
     <div class="container">
-        <section class="main">
+        <section class="weather-app">
+            <h1 class="app-title">Weather Forecast</h1>
             <section class="inputs">
-                <input type="text"  placeholder="Enter Your City Name ..." id="cityinput">
-                <input type="submit" value="Submit" id="add">
-                <button placeholder="submit" id="add"></button>
+                <input type="text" placeholder="Enter Your City Name..." id="cityinput" aria-label="City Input">
+                <button id="add">Get Weather</button>
             </section>
 
             <section class="display">
-                <div class="wrapper">
+                <div class="weather-details">
                     <h2 id="cityoutput"></h2>
                     <p id="description"></p>
                     <p id="temp"></p>

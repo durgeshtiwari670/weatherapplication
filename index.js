@@ -1,11 +1,11 @@
-var inputvalue = document.querySelector('#cityinput')
-var btn =  document.querySelector('#add')
-var city = document.querySelector('#cityoutput')
-var descrip = document.querySelector('#description')
-var temp = document.querySelector('#temp')
-var wind = document.querySelector('#wind')
+// var inputvalue = document.querySelector('#cityinput')
+// var btn =  document.querySelector('#add')
+// var city = document.querySelector('#cityoutput')
+// var descrip = document.querySelector('#description')
+// var temp = document.querySelector('#temp')
+// var wind = document.querySelector('#wind')
 
-apik = "a7f5e54ebfe37dd423c3eaec7195b691"
+// apik = "a7f5e54ebfe37dd423c3eaec7195b691"
 var inputvalue = document.querySelector('#cityinput');
 var btn = document.querySelector('#add');
 var city = document.querySelector('#cityoutput');
