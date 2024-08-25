@@ -1,96 +1,108 @@
-*{
+/* Reset some basic elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body{
-    background-image: url(weather.jpeg);
-    background-size: cover; /* Cover the whole screen */
-    background-position: center; /* Center the image */
+body {
+    background-image: url('weather.jpeg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-}
-
-.container{
-    width: 600px;
-    margin: 100px auto;
-    padding: 40px;
-}
-
-.inputs{
-    padding: 2rem 0 2rem 0;
-    text-align:  center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background:rgb(224,190,190);
-    height: 150px;
 }
 
-.inputs input[type="text"]{
-    height: 4rem ;
-    width: 20rem;
-    background: #212121;
-    font-weight: bold;
-    font-size: 1rem;
+.container {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-app {
+    text-align: center;
+}
+
+.app-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inputs input[type="text"] {
+    width: 70%;
     padding: 10px;
-    border: none;
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 3px;
-    margin-right: 4px;
-
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    outline: none;
 }
 
-.inputs input[type = "submit"]{
-    height: 3rem;
-    width: 6rem;
-    background: #270aca;
-    font-weight: bold;
+.inputs button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid #ddd;
+    background-color: #0066cc;
     color: white;
-    font-size: 1rem;
-    margin-top: 20px;
-    border: none;
-    border-radius: 4px;
-
-} 
-
-
-.display{
-    text-align: center;
-    width: 520px;
-    color: #16a864;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.wrapper{
-    margin: 0 9rem;
-    background-color: rgb(172, 189, 221);
-    height: 45vh;
-    margin: 50px auto;
-    border-radius: 2px;
+.inputs button:hover {
+    background-color: #005bb5;
 }
 
-.wrapper h2{
-    padding: 5px 0;
-    text-align: center;
-    background:#0548b5;
-    color: white;
-}
-
-.wrapper p{
-    margin: 20px 50px;
-    margin-right: 20px;
+.display {
+    padding: 20px;
     text-align: left;
-    color: #04214c;
-    font-size: 23px;
+    border-radius: 5px;
 }
 
-.wrapper h2 span{
-    font-size: 26px;
-    color: #9beefb;
+.weather-details h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.wrapper p span{
-    color: #5e0df4;
-    font-size: 25px; 
+.weather-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.weather-details p span {
+    color: #0066cc;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .inputs input[type="text"],
+    .inputs button {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
 }
