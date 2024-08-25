@@ -18,3 +18,38 @@ body{
     margin: 100px auto;
     padding: 40px;
 }
+
+.inputs{
+    padding: 2rem 0 2rem 0;
+    text-align:  center;
+    justify-content: center;
+    background:rgb(224,190,190);
+    height: 150px;
+}
+
+.inputs input[type="text"]{
+
+    width: 20rem;
+    background: #212121;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #473939;
+    border-radius: 3px;
+    margin-right: 4px;
+
+}
+
+.inputs input[type = "submit"]{
+    height: 3rem;
+    width: 6rem;
+    background: #270aca;
+    font-weight: bold;
+    color: white;
+
+}
+
+
+.display{}
