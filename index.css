@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
     border-radius: 10px;
     padding: 20px;
@@ -47,7 +47,7 @@ body {
 
 .inputs input[type="text"] {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     padding: 10px;
     border-radius: 5px 0 0 5px;
     border: 2px solid #ddd;
@@ -58,7 +58,7 @@ body {
 
 .inputs button {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     padding: 10px;
     border-radius: 5px;
     border: none;
